@@ -1,12 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: thistle;
+    color: #cdd1ff;
+    padding: 5px;
+}
+
+.header li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: silver;
+    padding: 5px;
+}
+
 .row {
     display: flex;
     /* justify-content: space-around; */
     flex-wrap: wrap;
 }
-.box{
+
+.box {
     margin: 5px;
     padding: 5px;
-    border:1px solid gray;
+    border: 1px solid gray;
     border-radius: 5px;
-    
 }
