@@ -1,8 +1,10 @@
-import { placeOrder, showOrders } from "../controllers/orderController.js";
-import express from "express"
-const orderRouter = express.Router()
+import mongoose from "mongoose";
 
-orderRouter.post("/", placeOrder)
-orderRouter.get("/:email", showOrders)
-
-export default orderRouter
+const orderSchema = mongoose.Schema({
+    email: { type: String, required: true },
+    orderValue: { type: Number, required: true },
+    items: [{ type: Object }],
+    orderDate: { type: Number },
+});
+const orderModel = mongoose.model("orders", orderSchema);
+export default orderModel;
