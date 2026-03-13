@@ -1,7 +1,3 @@
-/*const homePage = (req, res) => {
-res.render("home/index");
-};
-export default homePage*/
 import Product from "../models/productModel.js";
 
 const homePage = async(req, res) => {

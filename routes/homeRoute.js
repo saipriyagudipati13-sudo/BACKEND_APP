@@ -5,4 +5,4 @@ const homeRouter = express.Router()
 
 homeRouter.get("/", homePage)
 
-export default homeRouter
+export default homeRouter;
